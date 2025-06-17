@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Books...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+
+        .bg-heather-purple {
+            background-color: #946AAE !important;
+        }
+
+        .custom-text {
+            color: #FFF5E1;
+        }
+
+        .bg-lilac {
+            background-color: #C8A2C8 !important;
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body class="bg-lilac">
+
+    <div class="p-5 bg-heather-purple custom-text text-center">
+
+        <h1>Beyond The Covers <img src="books/noto--books.png" alt=""></h1>
+        <p>Books hold more than just pages.! <img src="books/logos--spark.png" alt=""></p>
+        <img class="mx-auto d-block img-fluid" src="books/book-lover.256x246 (1).png" alt="">
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                    <a class="navbar-brand" href="#"> <img src="logo.png" alt="Avatar Logo" style="width:40px;"
+                            class="rounded-pill"> </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><img src="books/tabler--home-filled.png" alt=""> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="books/gridicons--product.png" alt=""> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="books/lsicon--deal-filled.png" alt=""> Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="books/icon-park-solid--other.png" alt=""> Others</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav collapse navbar-collapse justify-content-end " id="navbarNav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="books/mdi--account.png" alt=""> Your Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="books/mdi--cart.png" alt=""> Cart</a>
+                </li>
+                <li>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary" type="button">Search</button>
+                    </form>
+        </div>
+        </li>
+        </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div style="display: flex; flex-direction: row; gap: 5px; justify-self: center;">
+        <button type="button" class="btn btn-dark">New <span class="badge bg-primary">4</span></button>
+        <button type="button" class="btn btn-dark">Popular <span class="badge bg-primary">6</span></button>
+        <button type="button" class="btn btn-dark">Best Seller <span class="badge bg-primary">9</span></button>
+    </div>
+
+    <br><br>
+
+    <div class="container bg-body-secondary bg-heather-purple" style="border-radius: 10px; border: 3px solid #705285;">
+        <br>
+        <h2 align="center"><i><u><b>Books <img src="books/emojione-monotone--books.png" alt=""></b></u></i></h2>
+        <br>
+        <b>Sort By</b>
+        <div align="right" class="btn-group">
+            <button type="button" class="btn btn-dark">Author</button>
+            <button type="button" class="btn btn-dark">Language</button>
+            <button type="button" class="btn btn-dark">Genre</button>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/twisted_series.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Twisted Series : Ana Huang | A Rollercoaster of
+                            Passion and Secrets</p>
+                        <p style="font-size: smaller; text-align: center;">$ 43.89</p>
+                        <p style="font-size: small; text-align: center;">4 BOOKS</p>
+                        <div class="modal fade" id="myModal_b1">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        #1 New York Times bestselling author and BookTok sensation <b>Ana Huang</b>
+                                        brings all the steam, angst, and forbidden love you could ask for in her beloved
+                                        Twisted series, which follows four friends and the heartbreak and passio that
+                                        leads them to love.
+                                        <br><br>
+                                        This set includes:
+                                        <br>
+                                        <ul>
+                                            <li><i>Twisted Love</i></li>
+                                            <li><i>Twisted Games</i></li>
+                                            <li><i>Twisted Hate</i></li>
+                                            <li><i>Twisted Lies</i> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_b1">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/the_folk_of_the_air_series.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Folk of the Air Series 3 Books Collection Set
+                            By Holly Black</p>
+                        <p style="font-size: smaller; text-align: center;">$ 57.20</p>
+                        <p style="font-size: small; text-align: center;">3 BOOKS</p>
+                        <div class="modal fade" id="myModal_b2">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        By #1 New York Times bestselling author <b>Holly Black</b>, the first book in a
+                                        stunning new series about a mortal girl who finds herself caught in a web of
+                                        royal faerie intrigue.
+                                        <br>
+                                        It consists of 3 parts <b>The Cruel Prince</b>, <b>The Wicked King</b>, <b>The
+                                            Queen of Nothing</b>.
+                                        <br>
+                                        <b>The Folk of the Air</b> is a young adult fantasy book series by Holly Black,
+                                        published by Little Brown Books for Young Readers. The story follows the journey
+                                        of mortal girl, <i>Jude Duarte</i>, and faerie prince, <i>Cardan Greenbriar</i>,
+                                        as they navigate the world of hate, betrayal, and contempt along with feelings
+                                        for each other.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_b2">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/haunting_adeline.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Cat and Mouse Duet 2 Books Collection Set By
+                            H.D. Carlton</p>
+                        <p style="font-size: smaller; text-align: center;">$ 54.99</p>
+                        <p style="font-size: small; text-align: center;">2 BOOKS</p>
+                        <div class="modal fade" id="myModal_b3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <b>H. D. Carlton</b> is a New York Times, USA Today, and internationally
+                                        bestselling author.
+                                        <br>
+                                        "Cat and Mouse Duet" refers to a two-book series by H.D. Carlton, comprising "Haunting Adeline" (Book 1) and "Hunting Adeline" (Book 2), known for its dark romance and suspenseful storyline. 
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_b3">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div align="center">
+            <button type="button" class="btn btn-dark rounded-pill">Click For More</button>
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+    <div class="container bg-body-secondary" style="border-radius: 10px;">
+        <br>
+        <h2 align="center"><i><u><b>Journal & Notebooks <img src="books/noto-v1--notebook.png" alt=""></b></u></i></h2>
+        <br>
+        <b>Sort By</b>
+        <div align="right" class="btn-group">
+            <button type="button" class="btn btn-dark">Style</button>
+            <button type="button" class="btn btn-dark">Price</button>
+            <button type="button" class="btn btn-dark">Material</button>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/j&n1.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Flexi Premium A5 Softcover Journal</p>
+                        <p style="font-size: smaller; text-align: center;">$ 17.77</p>
+                        <div class="modal fade" id="myModal_n1">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Journalling is a practice of regularly recording your thoughts, emotions,
+                                        experiences, and reflections in a journal or notebook. It can serve as a tool
+                                        for self-expression, self-discovery, and personal growth. Journalling can take
+                                        many forms, including writing, drawing, or using visual aids and it offers
+                                        numerous benefits to your physical and mental wellbeing!
+                                        <br><br>
+                                        <b>Special features of the Premium Dotted Journals</b>
+                                        <ul>
+                                            <li>Flexible double-layer cover</li>
+                                            <li>Available in six beautifully designed covers</li>
+                                            <li>160gsm x 160 thick quality cream acid free pages</li>
+                                            <li>Includes a matching ribbon marker and elastic closure</li>
+                                            <li>Rounded corners</li>
+                                            <li>Beautiful printed endpapers</li>
+                                            <li>5mm Dotted Pages</li>
+                                            <li>A5 Size</li>
+                                            <li>Specs: Dimensions: 21.5 x 15 x 1.8</li>
+                                            <li>Locally manufactured</li>
+                                            <li>Plush Italian leatherette cover material</li>
+                                            <li>Vintage Granite - Recycled leather material</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_n1">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/j&n2.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Bullet Dotted Journal </p>
+                        <p style="font-size: smaller; text-align: center;">$ 11.99</p>
+                        <div class="modal fade" id="myModal_n2">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Experience elegant organization with the Floral Dotted & Lined Series -
+                                        BLINGSPOT JOURNAL. Featuring a beautiful floral design, this journal brings a
+                                        touch of style to your everyday note-taking. Stay on top of your tasks and ideas
+                                        with ease.
+                                        <br>
+                                        Keep your writing, planning, and goal tracking organized with this stylish
+                                        journal. It's the perfect tool for staying on top of your thoughts and ideas.
+                                        Achieve your goals with ease and style.
+                                        <br><br>
+                                        <b>SPECIFICATIONS:</b>
+                                        <ul>
+                                            <li>100 GSM Paper</li>
+                                            <li>200 Pages</li>
+                                            <li>Ribbon Bookmark</li>
+                                            <li>Size : 6.0 x 8.5 Inch</li>
+                                            <li>Unique Design Hard Cover Journal</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_n2">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/j&n3.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Striped Vertical PU Leather Journal Notebook
+                        </p>
+                        <p style="font-size: smaller; text-align: center;">$ 25.00</p>
+                        <div class="modal fade" id="myModal_n3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Introducing A Touch of Gold Journal Notebook, the perfect companion for all your
+                                        writing needs. It features a vegan, eco-friendly water-resistant striped leather
+                                        cover, which ensures that this journal/diary will stand the test of time. The
+                                        embossed golden tree on the cover symbolizes growth, strength, and resilience,
+                                        making it a perfect gift for anyone who needs a little inspiration in their
+                                        life. With it's sleek and stylish design, lined gold rimmed pages, a ribbon
+                                        bookmark, this notebook is perfect for work or personal use, convenient to use
+                                        and keep your notes organized This journal comes with a matching gold pen,
+                                        elegantly packaged in a beautifully designed box ready for gifting. Don't miss
+                                        out on this opportunity to invest in your creativity with our Touch of Gold
+                                        Journal Notebook - order yours today!
+                                        <img src="books/arcticons--novelworld.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_n3">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div align="center">
+            <button type="button" class="btn btn-dark rounded-pill">Click For More</button>
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+    <div class="container bg-body-secondary" style="border-radius: 10px;">
+        <br>
+        <h2 align="center"><i><u><b>Book Marks <img src="books/ph--bookmarks-fill.png" alt=""></b></u></i></h2>
+        <br>
+        <b>Sort By</b>
+        <div align="right" class="btn-group">
+            <button type="button" class="btn btn-dark">Style</button>
+            <button type="button" class="btn btn-dark">Price</button>
+            <button type="button" class="btn btn-dark">Material</button>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/haunting_adeline_bookmark.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Cat & Mouse Duet Bookmark Set With Tassels </p>
+                        <p style="font-size: smaller; text-align: center;">$ 17.85</p>
+                        <div class="modal fade" id="myModal_bm1">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <b>Size:</b> 210x65mm - Tassel - Approx 13cm Long
+                                        <br>
+                                        <b>Material:</b> 350gsm Silk/ Matt Coated Card stock
+                                        <br>
+                                        <b>Product Care:</b>
+                                        These bookmarks are coated in a velvet lamination which add a beautiful soft
+                                        feel to the stock while also acting as a protective layer over the foiling. This
+                                        will help reduce the risk of scratching and rubbing of the foil. However, we do
+                                        recommend handling with care and not placing the bookmark on abrasive surfaces
+                                        or wet areas.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_bm1">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/shatter_me_bookmark.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Shatter Me Bookmark Set</p>
+                        <p style="font-size: smaller; text-align: center;">$ 24.00</p>
+                        <div class="modal fade" id="myModal_bm2">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Shatter Me Foiled Bookmark Set of 6 Collectible Characters.
+                                        <br>
+                                        Want a little something extra to add to your bookish shelves and walls? Why not
+                                        let this beautiful art print take the stage.
+                                        <br><br>
+                                        <b>About this product:</b>
+                                        <br>
+                                        -5x7
+                                        <br>
+                                        -16 pt paper weight
+                                        <br>
+                                        -Matte-Silk coated front and Back
+                                        <br>
+                                        -Not laminated
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_bm2">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/rina_kent_bookmark.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Legacy Of Gods Series Bookmark Set</p>
+                        <p style="font-size: smaller; text-align: center;">$ 4.40</p>
+                        <div class="modal fade" id="myModal_bm3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Officially Licensed Merchandiser for Rina Kent.
+                                        <br>
+                                        Bookmarks with a Matt Velvet feel.
+                                        <br>
+                                        All T-Shirts/Hoodies have had the design applied with a Heat Transfer Vinyl and
+                                        it is recommended for washing to be done on a cool/warm temperature and not to
+                                        be dry cleaned or put in the dryer.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_bm3">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div align="center">
+            <button type="button" class="btn btn-dark rounded-pill">Click For More</button>
+        </div>
+        <br>
+    </div>
+
+    <br><br>
+
+    <div class="container bg-body-secondary" style="border-radius: 10px;">
+        <br>
+        <h2 align="center"><i><u><b>Bookends <img src="books/book-management.256x256 (1).png" alt=""></b></u></i></h2>
+        <br>
+        <b>Sort By</b>
+        <div align="right" class="btn-group">
+            <button type="button" class="btn btn-dark">Style</button>
+            <button type="button" class="btn btn-dark">Price</button>
+            <button type="button" class="btn btn-dark">Material</button>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/be1.jpg" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Antique Brass Tulip Bookends</p>
+                        <p style="font-size: smaller; text-align: center;">$ 36.00</p>
+                        <div class="modal fade" id="myModal_be1">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Elevate your bookshelf with these vintage-inspired Antique Brass Tulip Bookends.
+                                        The intricate tulip detailing adds a touch of elegance to showcase your favorite
+                                        books.
+                                        <ul>
+                                            <br>
+                                            <li>Dimensions: 5"L x 3"W x 6.75"H</li>
+                                            <li>Material: Iron, Brass</li>
+                                            <li>Care & Use: Dust with soft cloth.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_be1">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/be2.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Dragon Wizard Metal Art Decor Bookends</p>
+                        <p style="font-size: smaller; text-align: center;">$ 49.46</p>
+                        <div class="modal fade" id="myModal_be2">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Embark on a journey into the realm of imagination with our Fantasy Dragon
+                                        Bookends! 📚✨ For every book lover enchanted by magical worlds and spellbinding
+                                        stories, these book ends are a must-have addition to your collection. Summon the
+                                        spirit of wizardry with these captivating bookend that evoke the essence of
+                                        spells and enchantments. Perfect for fans of epic tales like the Lord of the
+                                        Rings, these book end are a magical gift that bridges the gap between reality
+                                        and fantasy. 🎁🔮📖
+                                        <br><br>
+                                        <ul>
+                                            <li>Width: 5.96 inches</li>
+                                            <li>Height: 5.96 inches</li>
+                                            <li>Depth: 5.96 inches</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_be2">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/be3.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">Jujutsu Kaisen Character Gojo Satoru Bookends
+                        </p>
+                        <p style="font-size: smaller; text-align: center;">$ 28.90</p>
+                        <div class="modal fade" id="myModal_be3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Jujutsu Kaisen Character Gojo Satoru Bookends Wood Book Divider Decorative
+                                        Shelves Non-Skid Book Stand 2 Pieces For Office
+                                        Home.
+                                        <br><br>
+                                        <b>About this item</b>
+                                        <ul>
+                                            <br>
+                                            <li>Material: beech and iron. Simple, durable and thick.</li>
+                                            <li>The bookends' surface is hand polished to make it smoother. When you put
+                                                the books, don't worry about getting scratched.</li>
+                                            <li>The bookend can be used to store and store your books, CDs and DVDs to
+                                                keep your room, home and desk clean.</li>
+                                            <li>Thick bookshelves can keep your books, magazines, documents, DVDs,
+                                                recipes, and other things upright, keeping your books organized and easy
+                                                to find.</li>
+                                            <li>Bookshelves can be organized to create beautifully decorated bookends
+                                                for the study room and create an elegant reading environment. It is very
+                                                suitable for home, office, school dormitory or library study room.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_be3">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div align="center">
+            <button type="button" class="btn btn-dark rounded-pill">Click For More</button>
+        </div>
+        <br>
+    </div>
+
+    <br><br>
+
+    <div class="container bg-body-secondary" style="border-radius: 10px;">
+        <br>
+        <h2 align="center"><i><u><b>Merchandise <img src="books/icon-park--men-jacket.png" alt=""></b></u></i></h2>
+        <br>
+        <b>Sort By</b>
+        <div align="right" class="btn-group">
+            <button type="button" class="btn btn-dark">Style</button>
+            <button type="button" class="btn btn-dark">Price</button>
+            <button type="button" class="btn btn-dark">Material</button>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/m1.avif" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">The Cruel Prince Jude And Duarte Shirt Top Folk
+                            Of The Air Merch</p>
+                        <p style="font-size: smaller; text-align: center;">$ 1,250</p>
+                        <div class="modal fade" id="myModal_m1">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        The Cruel Prince Shirt Fantasy Bookish Top Folk of the Air Merch Enemies to
+                                        Lovers Jude and Cardan Gift for Book Lovers Faerie Shirt.
+                                        <br><br>
+                                        <b>👕 PRODUCT DETAILS:</b>
+                                        <ul>
+                                            <br>
+                                            <li>Retail fit: Please take a look at the photos to see our size chart.</li>
+                                            <li>Super Soft & Cozy: Crafted from the softest material (because why would
+                                                you settle for less?). Made with a medium-heavy fabric blend of 50%
+                                                cotton and 50% polyester, this sweatshirt feels like a warm hug, perfect
+                                                for those chilly months. ❄️🧥</li>
+                                            <li>DTG Print: Ink is printed into the fabric. The result is soft and
+                                                long-lasting. It won't crack and peel like vinyl prints.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_m1">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/m2.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;">The Powerless Trilogy Prince Kai Azer Black
+                            Glossy Coffee Mug</p>
+                        <p style="font-size: smaller; text-align: center;">$ 18.93</p>
+                        <div class="modal fade" id="myModal_m2">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Feel the power of the Kai Azer coffee mug, inspired by the book series Powerless
+                                        by Lauren Roberts. This unique mug combines quirky style and literary
+                                        inspiration for a playful and fun look. Show off your love for the series with
+                                        this one-of-a-kind cup.
+                                        <br><br>
+                                        <b>Design Info</b>
+                                        <ul>
+                                            <br>
+                                            <li>Occasion: Home, School, Office, Book Party, Camping, Indoor Meetings.
+                                            </li>
+                                            <li>Design Style: Typographic, Character's Inspiration, Spiritual, Iconic.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_m2">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="cursor: pointer;">
+                    <img src="books/m3.webp" class="img-thumbnail" alt="bag1">
+                    <div class="card-body">
+                        <p style="font-size: small; text-align: center;"> Fourth Wing Stickers, Empyrean Dragon
+                            Stickers, Iron Flame Stickers Set</p>
+                        <p style="font-size: smaller; text-align: center;">$ 2.87</p>
+                        <div class="modal fade" id="myModal_m3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        Bookish Sticker Pack, Kindle Stickers, Waterproof Sticker Set.
+                                        <br><br>
+                                        🌈100pcs High-quality Stickers
+                                        <br>
+                                        Size 3 - 6 cm
+                                        <br><br>
+                                        🎉Note: the selections are random picked unless you order Entire Pack, which you
+                                        will get everything shown in the pictures. 🤗
+                                        <br><br>
+                                        🎁Wide range of Applications: DIY your Kindle, Laptop, Computer, Scrapbooks,
+                                        Macbooks, Water bottle, Phone, Skateboard, Luggage, Fridge, and more.
+                                        <br><br>
+                                        🌞Material: Vinyl (PVC): All Stickers are pre-cut, all you need to do is peel
+                                        the back and stick on flat surfaces. Sun protection and Waterproof! 💦
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center" style="display: flex; flex-direction: column;">
+                            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#myModal_m3">
+                                Information
+                            </button>
+                            <br>
+                            <button type="button" class="btn btn-outline-dark rounded-pill">Add to the cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div align="center">
+            <button type="button" class="btn btn-dark rounded-pill">Click For More</button>
+        </div>
+        <br>
+    </div>
+
+    <br><br>
+    <div align="center">
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+    </div>
+    <br><br>
+
+</body>
+
+<footer>
+    <div class="p-1 bg-dark"></div>
+    <div id="contact" class="container-fluid bg-grey bg-heather-purple">
+        <div class="row ">
+            <div class="col-sm-4 p-3">
+                <p class="ms-3 p-1 fw-bold">FOR QUERIES.</p>
+                <hr class="ms-3" style="width:450px">
+                <p class="p-2 ms-4"><img src="books/mdi--location.png" alt=""> Chicago, US</p>
+                <p class="p-2 ms-4"><img src="books/ic--baseline-phone.png" alt=""> Phone: +00 151515</p>
+                <p class="p-2 ms-4"><img src="books/fa6-solid--envelope.png" alt=""> Email: queries@book.us</p>
+            </div>
+            <div class="col-sm-7 p-2 ms-5 mt-2">
+                <h2 class="ms-5 text-start fw-bold">ORDER TRACKER <img src="books/arcticons--novelworld.png" alt="book">
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="ms-5 form-control my-1" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="ms-5 form-control my-1" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="ms-5 form-control my-1" placeholder="Order ID" type="number" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="ms-5 form-control my-1" placeholder="comments" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <button class="ms-5 my-1 btn btn-dark" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</footer>
+
+</html>
